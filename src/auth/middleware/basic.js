@@ -6,7 +6,7 @@ const {User} = require('../models/index');
 
 const basicAuth = (async(req,res,next)=>{
     if(req.headers.authorization){
-        //basc lkasjdflkjdfl;
+        //basc  lkasjdflkjdfl;
         const secondPart = req.headers.authorization.split(" "); // if I have error please check tow lines
         const hashed  = secondPart[1]
        const decode = base64.decode(hashed)
