@@ -4,7 +4,7 @@ const express = require("express");
 const {User} = require("../models/index");
 const UserRouter = express.Router();
 const bcrypt = require("bcrypt");
-const basicAuth = require("../middleware/ basic");
+const basicAuth = require("../middleware/basic");
 UserRouter.post("/signup", async (req, res) => {
 
     const username = req.body.username;
